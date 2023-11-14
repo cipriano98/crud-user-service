@@ -8,6 +8,7 @@
     "dev": "nodemon src/server.js",
     "migrate": "npx prisma migrate dev",
     "generate": "npx prisma generate",
+    "studio": "npx prisma studio",
     "docker:build": "docker build -t agiliza/crud-user-service .",
     "docker:push": "docker push agiliza/crud-user-service",
     "docker:run": "docker run -p 3000:3000 agiliza/crud-user-service"
