@@ -1,0 +1,28 @@
+{
+  "name": "crud-user-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "migrate": "npx prisma migrate dev",
+    "generate": "npx prisma generate",
+    "docker:build": "docker build -t agiliza/crud-user-service .",
+    "docker:push": "docker push agiliza/crud-user-service",
+    "docker:run": "docker run -p 3000:3000 agiliza/crud-user-service"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.5.2",
+    "axios": "^1.6.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "sqlite": "^5.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
